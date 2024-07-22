@@ -1,4 +1,4 @@
-# AioGram Example
+# Aiogram Example
 ![Static Badge](https://img.shields.io/badge/aiogram-3.x-blue)
 ![Static Badge](https://img.shields.io/badge/loguru-0.7.2-green)
 ![Static Badge](https://img.shields.io/badge/pydantic-2.8.2-cyan)
