@@ -1,2 +1,4 @@
-# aiogram-example
-Пример для aiogram 3.x
+# AioGram Example
+## Использование
+
+pip install -r requirements.txt
