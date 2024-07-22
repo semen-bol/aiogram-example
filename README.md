@@ -14,4 +14,6 @@ pip install -r requirements.txt
 
 3. Запускаем (py main.py) и проверяем через команду ```/start``` в личных сообщениях
 
+* Если вы не будете использовать все те модули которые тут есть то используйте venv: https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/
+
 * Если в директории есть файл delete-me.please то удаляем его, он нужен что бы пустые папки сюда тоже добавлялись
