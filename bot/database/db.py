@@ -2,5 +2,5 @@
 import asyncio
 
 async def db():
-    def __init__(self):
+    async def __init__(self):
         pass
