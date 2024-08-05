@@ -3,7 +3,7 @@ from aiogram.types import Message, LinkPreviewOptions
 from aiogram.filters import CommandObject, CommandStart, Command
 
 from bot.filters.base import ChatTypeFilter
-import bot.database.db as db
+from bot.database.db import db
 
 from loguru import logger
 
