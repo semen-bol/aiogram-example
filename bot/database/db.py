@@ -30,12 +30,7 @@ class db:
                 database=self._database
             )
         elif isLocal == True:
-            connect_url_auto = "mongodb://{host}/?authSource={database}".format(
-                username=self._username,
-                password=self._password,
-                host=self._host,
-                database=self._database
-            )
+            connect_url_auto = "mongodb://{host}/?authSource={database}".format(host=self._host,database=self._database)
         
         self.client = AsyncIOMotorClient(connect_url_auto)
         self.db = self.client[self._database]
