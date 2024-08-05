@@ -4,7 +4,7 @@ from aiogram.filters import BaseFilter
 from aiogram.types import Message
 
 
-class ChatTypeFilter(BaseFilter):  # [1]
+class ChatTypeFilter(BaseFilter):  # [1] фильтр онли на тип чата private, group, supergroup
     def __init__(self, chat_type: Union[str, list]): # [2]
         self.chat_type = chat_type
 
