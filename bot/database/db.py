@@ -8,7 +8,7 @@ import asyncio
 from motor.motor_asyncio import AsyncIOMotorClient
 
 class db:
-    def __init__(self, host: str, username: str, password: str, database: str, isLocal: bool = False) -> None:
+    def __init__(self, host: str, username: str, password: str, database: str, isLocal = False) -> None:
         self._host = host
         self._username = username
         self._password = password
