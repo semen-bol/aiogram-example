@@ -8,7 +8,7 @@ import asyncio
 from motor.motor_asyncio import AsyncIOMotorClient
 
 class db:
-    def __init__(self, host: str, username: str, password: str, database: str, isLocal: bool) -> None:
+    def __init__(self, host: str, username: str, password: str, database: str, isLocal: bool = False) -> None:
         self._host = host
         self._username = username
         self._password = password
@@ -16,10 +16,7 @@ class db:
 
         self.client = None
         self.db = None
-        if isLocal == False:
-            self._connect(False)
-        elif isLocal == True:
-            self._connect(True)
+        self._connect(isLocal)
 
     def _connect(self, isLocal):
         if isLocal == False:
