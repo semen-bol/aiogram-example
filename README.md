@@ -13,6 +13,14 @@ pip install -r requirements.txt
 2. Создаем файл в основной директории рядом с main.py, называем файл .env и записываем туда переменную BOT_TOKEN="сюда токен телеграм"
 
 3. Запускаем (py main.py) и проверяем через команду ```/start``` в личных сообщениях
+##To Do list
+--
+
+## Благодарность (credits)
+
+--
+
+
 ## Некоторые нюансы
 * Если вы не будете использовать все те модули которые тут есть то используйте venv: https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/
 
