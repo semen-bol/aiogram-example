@@ -14,7 +14,8 @@ pip install -r requirements.txt
 
 3. Запускаем (py main.py) и проверяем через команду ```/start``` в личных сообщениях
 
-To Do list
+
+## To Do
 
 --
 
