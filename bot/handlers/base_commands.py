@@ -5,7 +5,7 @@ from aiogram.filters import CommandObject, CommandStart, Command
 from bot.filters.base import ChatTypeFilter
 
 from loguru import logger
-from bot.keyboards.keyboards import Example_keyboard, List_keyboard
+from bot.keyboards.keyboards import Example_keyboard
 
 rt = Router()
 
