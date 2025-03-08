@@ -8,7 +8,7 @@ import asyncio
 from motor.motor_asyncio import AsyncIOMotorClient
 
 class db:
-    def __init__(self, host: str, username: str, password: str, database: str, isLocal = False) -> None:
+    def __init__(self, host: str, username: str, password: str, database: str, isLocal: bool) -> None:
         self._host = host
         self._username = username
         self._password = password
@@ -16,7 +16,10 @@ class db:
 
         self.client = None
         self.db = None
-        self._connect(isLocal)
+        if isLocal == False:
+            self._connect(False)
+        elif isLocal == True:
+            self._connect(True)
 
     def _connect(self, isLocal):
         if isLocal == False:
@@ -42,4 +45,12 @@ class db:
         result = await collection_.find_one(document)
         return result
 
-    
+# u can init your db here like a
+"""init_db = db(host="localhost:27017", # host:port
+        username=None, # root
+        password=None, # qwerty123
+        database="example", # users / example / chats
+        isLocal=True # база данных локальна? boolean
+        )"""
+# and import this every where
+"""from database.db import init_db as db""" # like that
