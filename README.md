@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ## To Do
 
---
+https://github.com/users/semen-bol/projects/4
 
 ## Благодарность (credits)
 
