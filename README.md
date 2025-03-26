@@ -24,7 +24,7 @@ https://github.com/users/semen-bol/projects/4
 
 ## Благодарность (credits)
 
---
+https://github.com/MasterGroosha/aiogram-3-guide - за использование примеров из документации.
 
 
 ## Некоторые нюансы
