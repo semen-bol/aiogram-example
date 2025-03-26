@@ -4,7 +4,10 @@
 ![Static Badge](https://img.shields.io/badge/pydantic-2.8.2-cyan)
 ![Static Badge](https://img.shields.io/badge/pydantic_settings-2.3.4-red)
 ## Использование
-Перед установкой обратите внимание на то что в папке bot/database/db.py есть реализация базы данных на mongodb но она не полная, рекомендуется доделать ее самим, и в bot/updates/base_updates.py есть тоже реализация, как пример, а также в bot/middlwares есть тоже реализвация, которая полностью работает и делает то что нужно (троттлинг).
+0. Скачиваем репозиторий или клонируем через:
+```
+git clone
+```
 
 1. Зависимости:
 ```
