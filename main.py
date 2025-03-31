@@ -7,18 +7,11 @@ from aiogram.enums import ParseMode
 from bot.handlers import base_commands
 from bot.updates import base_updates
 from bot.utils.config import config
-from bot.database.db import db # Смотрите файл bot/database/db.py и файл test.py
+from bot.database.mongo_db import init_db as db
 from bot.middlewares.ultrabase_middleware import CommandFlood
 
 from loguru import logger
 logger.add("./bot/logs/log_{time}.log", format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}", compression="zip")
-
-db = db(host="localhost:27017", # host:port
-        username=None, # root
-        password=None, # qwerty123
-        database="example", # users / example / chats
-        isLocal=True # база данных локальна? boolean
-        )
 
 dp = Dispatcher()
 
