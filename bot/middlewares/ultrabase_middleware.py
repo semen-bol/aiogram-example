@@ -1,3 +1,4 @@
+# С костылями но своё ;D
 from typing import Any, Awaitable, Callable, Dict
 
 from aiogram import BaseMiddleware

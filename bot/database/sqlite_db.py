@@ -1,6 +1,6 @@
-#idk why this dont work o//
+#soon
 
-import aiosqlite
+"""import aiosqlite
 
 class db:
     def __init__(self, path):
@@ -25,4 +25,4 @@ class db:
 
     async def _exit(self):
         await self.conn.close()
-        await self.curs.close()
+        await self.curs.close()"""

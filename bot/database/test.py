@@ -1,12 +1,12 @@
 import asyncio
 
 from mongo_db import init_db as db
-from sqlite_db import db as sqlite_db
+#from sqlite_db import db as sqlite_db
 
 from loguru import logger
 
 # SQLite
-async def example_sqlite():
+"""async def example_sqlite():
     sql = sqlite_db("./example.db")
     await sql.connect()
     passt = await sql.ping()
@@ -17,7 +17,7 @@ async def example_sqlite():
     try:
         await sql._exit()
     except ValueError as err: logger.debug("Ошибка... Отключение от базы данных.")
-    print(s)
+    print(s)"""
 
 # Mongo
 async def example():

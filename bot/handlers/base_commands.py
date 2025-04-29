@@ -2,9 +2,9 @@ from aiogram import Router, html
 from aiogram.types import Message
 from aiogram.filters import CommandObject, CommandStart, Command
 
-from bot.filters.base import ChatTypeFilter
-
 from loguru import logger
+
+from bot.filters.base import ChatTypeFilter
 from bot.keyboards.keyboards import Example_keyboard
 
 rt = Router()
