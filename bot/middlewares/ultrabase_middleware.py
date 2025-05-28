@@ -1,4 +1,6 @@
 # С костылями но своё ;D
+# Работает? Не трогай! 
+# Хочешь переписать? Делай как желаешь нужным.
 from typing import Any, Awaitable, Callable, Dict
 
 from aiogram import BaseMiddleware
