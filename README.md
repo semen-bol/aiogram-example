@@ -18,6 +18,10 @@ pip install -r requirements.txt
 3. Запускаем (py main.py) и проверяем через команду ```/start``` в личных сообщениях
 
 
+## Docker
+
+Доступна отдельная ветка для docker
+
 ## To Do
 
 https://github.com/users/semen-bol/projects/4
