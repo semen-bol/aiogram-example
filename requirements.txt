@@ -2,3 +2,5 @@ aiogram==3.10.0
 loguru==0.7.2
 pydantic==2.8.2
 pydantic_settings==2.3.4
+motor==3.7.1
+cachetools==5.5.2

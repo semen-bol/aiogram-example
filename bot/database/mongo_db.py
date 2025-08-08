@@ -28,7 +28,7 @@ class MongoDB:
     def _connect(self, isLocal):
         if isLocal == False and not self._myUrl:
             connect_url_auto = (
-                "mongodb://{username}:{password}@{host}/?authSource={database}".format(
+                "mongodb://{username}:{password}@{host}/{database}?authSource=admin".format(
                     username=self._username,
                     password=self._password,
                     host=self._host,
@@ -36,7 +36,7 @@ class MongoDB:
                 )
             )
         elif isLocal == True and not self._myUrl:
-            connect_url_auto = "mongodb://{host}/?authSource={database}".format(
+            connect_url_auto = "mongodb://{host}/{database}?authSource=admin".format(
                 host=self._host, database=self._database
             )
         elif self._myUrl:
@@ -106,9 +106,9 @@ class MongoDB:
             return e
 
 
-init_db = MongoDB(host="localhost:27017", # host:port
-        username=None, # root
-        password=None, # qwerty123
-        database="example", # users / example / chats
-        isLocal=True # база данных локальна? boolean
+init_db = MongoDB(host="mongo:27017", # host:port
+        username="root", # root
+        password="password", # qwerty123
+        database="local", # users / example / chats
+        isLocal=False # база данных локальна? boolean
         )

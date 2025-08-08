@@ -1,0 +1,35 @@
+volumes:
+  mongodb_data:
+
+services:
+  bot:
+    build:
+      context: ..
+      dockerfile: deploy/app/Dockerfile
+    depends_on:
+      - mongo
+    volumes:
+      - "../bot:/app/bot"
+    env_file:
+      - .env
+    restart: always
+    networks:
+      - internal
+
+  mongo:
+    container_name: mongo
+    restart: always
+    image: mongo:latest
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    networks:
+      - internal
+    ports:
+      - 27017:27017
+
+networks:
+  internal:
+    driver: bridge

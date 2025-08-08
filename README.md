@@ -1,21 +1,23 @@
-# Aiogram Example
+# Aiogram Example (docker version)
 ![Static Badge](https://img.shields.io/badge/aiogram-3.x-blue)
 ![Static Badge](https://img.shields.io/badge/loguru-0.7.2-green)
 ![Static Badge](https://img.shields.io/badge/pydantic-2.8.2-cyan)
 ![Static Badge](https://img.shields.io/badge/pydantic_settings-2.3.4-red)
 ## Использование
-0. Скачиваем репозиторий или клонируем через:
+1. Скачиваем репозиторий или клонируем через:
 ```
 git clone
 ```
 
-1. Зависимости:
+2. Билдим докер:
 ```
-pip install -r requirements.txt
+make dev-build
 ```
-2. Создаем файл в основной директории рядом с main.py, называем файл .env и записываем туда переменную BOT_TOKEN="сюда токен телеграм"
 
-3. Запускаем (py main.py) и проверяем через команду ```/start``` в личных сообщениях
+3. Запускаем через докер:
+```
+make dev-start
+```
 
 
 ## To Do
